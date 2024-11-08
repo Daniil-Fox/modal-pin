@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pin code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <button
+      class="bg-blue-500 text-white font-bold py-2 px-4 rounded modal-btn-fi"
+    >
+      Открыть модалку с PIN
+    </button>
+    <div
+      class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center transition-opacity duration-300 opacity-0"
+      id="modal"
+    >
+      <div class="bg-white rounded-lg shadow-lg p-6 w-96" id="modalContent">
+        <div class="flex justify-between items-center mb-4">
+          <div class="bank__logo">
+            <img
+              alt="Bank logo"
+              class="h-10"
+              height="50"
+              src="https://storage.googleapis.com/a1aa/image/rpiYsHynxHovAVqWW4vGO9Vg41Y2lIhgsgtvkj4B1BMS8v7E.jpg"
+              width="50"
+            />
+          </div>
+          <div class="banks__row">
+            <img
+              alt="Mastercard logo"
+              class="h-6 mr-2"
+              height="10"
+              src="./img/mastercard.png"
+              width="10"
+            />
+            <img
+              alt="Visa logo"
+              class="h-6 mr-2"
+              height="10"
+              src="./img/visa.png"
+              width="10"
+            />
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="pin">
+            PIN Online
+          </label>
+          <div class="flex items-center justify-between">
+            <input
+              class="w-10 h-10 border border-gray-300 rounded text-center"
+              maxlength="1"
+              type="password"
+            />
+            <input
+              class="w-10 h-10 border border-gray-300 rounded text-center"
+              maxlength="1"
+              type="password"
+            />
+            <input
+              class="w-10 h-10 border border-gray-300 rounded text-center"
+              maxlength="1"
+              type="password"
+            />
+            <input
+              class="w-10 h-10 border border-gray-300 rounded text-center"
+              maxlength="1"
+              type="password"
+            />
+            <input
+              class="w-10 h-10 border border-gray-300 rounded text-center"
+              maxlength="1"
+              type="password"
+            />
+            <input
+              class="w-10 h-10 border border-gray-300 rounded text-center"
+              maxlength="1"
+              type="password"
+            />
+          </div>
+        </div>
+        <button class="w-full bg-blue-500 text-white font-bold py-2 rounded">
+          CONFERMA
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
