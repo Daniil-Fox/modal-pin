@@ -30,4 +30,9 @@ img {
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.input-circ {
+  display: block;
+  border-radius: 100%;
 }/*# sourceMappingURL=main.css.map */
